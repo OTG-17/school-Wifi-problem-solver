@@ -26,27 +26,7 @@ oppgaver på nett, og lærere kan ikke vise materiell fra internett.
 <li>Hvis ingenting hjelper, ta kontakt med IT-avdelingen og oppgi romnummer, tidspunkt og hva du allerede har prøvd.</li>
 </ol>
 
-<h2>QR-kode for rask kontakt med IT-avdelingen</h2>
-<p>
-En QR-kode gjør at en elev eller lærer kan gå rett til henvendelsesskjemaet til
-IT-avdelingen ved å skanne den med telefonkameraet, uten å måtte skrive inn en lenke manuelt.
-</p>
 
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADF0lEQVR4nO2cQW7jMAxFP8cCspSBHiBHkW826JHmBtZReoAC9jKAjD8LUrabYhadzNipzSwUW9FDJISgvkg6Qnz5lX98nQEccsghhxxyyKFjQmKvAJF2EmQJ2gdgEunGOqDbZXoObQ8lkuQAIA0NgVjsKksAgIYkyY/QdtNzaDso2PvYAukXwNy+B6YBYL7eBABAjIAATdl8eg7tDkkHQLoxQH4ODQE0lO5/fJNDzwmFu3vmLqhTsC0ivgsx/oNvcuh7QZFkv3THAmRVlo2aBslyD203PYc2g7BWjGioevJTUwckkuyffE0OPQLprrEKZee2ARALmK8FQLwJED/Gup98TQ49Dkk3iiCLCPtYAIxB+/jaNgTGAOR28njECSBTlvlagiROQdJbKKYsxxaCOAVinIQYL5Stp+fQ5pDqCHJotFGNyaEh+0giLXoyFtcRJ4DMInpgHbjUIOVgfUgsYB9LHfzka3LoEWj2EYAZQyRJFr1VO1BtEW2oW8ShodWuYf5ggHkGcxSW5jCjcYs4OjTvGo02gF4Bi1NAGuxTt4jjQ9UiVCTMrkBdRlmPc4s4B6SnT0nDBGB8qZGoeBPNhwIAc9cUScPL9tNzaHNo9hG1WYRmH2mVEprc0MOo+4iDQ1VZ0n54k5IAlsiE7h9pcGV5HkikbYjEm0iHSWrAChC5FvBVLuojpNtleg7tGI+wvQI1PLGKUMF9xBkgy4anj2JC41J6uJivasjCLeLQ0B9ilrU0gnOdzCrQ7RZxAii3QDWGSaClEZgEGC+z0LSt47usyaGHdo2VU7BQtuU+V0cPz32eAZprqIo2gjgAiCVYaQQKkHpAbNy203NoJ2h5pgvpLQBZLnb67EYRraFaeYtvsSaHHoJSlZdAvGlpnXRoWAXGUpq9y/Qc2kFHAJbijPPhQoVDTXfNaXLXEYeG7p/gkfR2oT3RN9YPUz8F5mup90++Jocege59hPatglNxnSH3mOXxoXXMksuuMW8dVnYJeO7zJNCnZ7rmOkt78q/W2y7RCreIQ0Pi/0zmkEMOOeSQQw79JfQbjAy9fnbtJcIAAAAASUVORK5CYII=" alt="QR-kode til henvendelsesskjema for IT-avdelingen" width="200" height="200">
-
-<h3>Hvordan QR-koden ble laget (Python)</h3>
-<pre><code>import qrcode
-
-data = "https://forms.example.com/it-support-request"
-img = qrcode.make(data)
-img.save("qr_it_support.png")
-</code></pre>
-
-<p>
-Biblioteket qrcode gjør om en tekst eller lenke til et QR-kode-bilde,
-som deretter kan skrives ut og henges opp der problemet oppstår,
-for eksempel ved ruteren eller på døren til IT-rommet.
-</p>
 
 </body>
 </html>
