@@ -2,44 +2,127 @@
 <html lang="no">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>hjelp til elever og lærere</title>
-  <style>
-    .list {
-      font-size: 25px;
+<style>
+  :root {
+    --bg: #F7F8F9;
+    --ink: #1F2A30;
+    --ink-soft: #5B6B72;
+    --accent: #2E6B74;
+    --line: #DCE3E6;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14191C;
+      --ink: #E7EDEF;
+      --ink-soft: #A2B0B5;
+      --accent: #7FC4CC;
+      --line: #2A3338;
     }
-    img {
-      width: 200px;
-      height: 250px;
-    }
-  </style>
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #14191C;
+    --ink: #E7EDEF;
+    --ink-soft: #A2B0B5;
+    --accent: #7FC4CC;
+    --line: #2A3338;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin: 0 0 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    color: var(--accent);
+    margin: 0 0 0.5rem;
+  }
+
+  p {
+    color: var(--ink-soft);
+    margin: 0 0 1.5rem;
+  }
+
+  .list {
+    font-size: 1.05rem;
+    padding-left: 1.4rem;
+    margin: 0;
+  }
+
+  .list li {
+    color: var(--ink);
+    margin-bottom: 1.75rem;
+  }
+
+  .list li::marker {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  img {
+    display: block;
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    margin: 0.6rem auto 0;
+    border-radius: 6px;
+    border: 1px solid var(--line);
+  }
+</style>
 </head>
 <body>
 
-<h1>hjelp til elever og lærere</h1>
+<div class="wrap">
 
-<h2>Problem</h2>
-<p>
-Elever og lærere på IT-rommet får ikke koblet seg til skolens Wi-Fi -
-enheten viser «Ingen internettilgang» eller ber stadig om passordet på nytt.
-Problemet skjer ofte og forstyrrer undervisningen: elever kan ikke levere
-oppgaver på nett, og lærere kan ikke vise materiell fra internett.
-</p>
+  <h1>hjelp til elever og lærere</h1>
 
-<h2>Løsning - kort veiledning</h2>
-<ol class="list">
-<li>Sjekk Wi-Fi på enheten: pass på at Wi-Fi er slått på og at riktig skolenettverk er valgt.</li>
-  <img src="wifi_.png">
-<li>Sjekk passordet på nytt - store og små bokstaver har betydning.</li>
-  <img src="wifi2.png">
-<li>Glem nettverket i innstillingene og koble til på nytt med passordet fra bunnen av.</li>
-  <img src="glemt.jpg">
-<li>Start enheten på nytt - noen ganger henger bare nettverksmodulen seg opp.</li>
-  <img src="restart.jpg">
-<li>Sjekk om andre har samme problem - hvis ja, ligger feilen i ruteren, ikke i enheten din.</li>
-<li>Hvis ingenting hjelper, ta kontakt med IT-avdelingen og oppgi romnummer, tidspunkt og hva du allerede har prøvd.</li>
-</ol>
+  <h2>Problem</h2>
+  <p>
+  Elever og lærere på IT-rommet får ikke koblet seg til skolens Wi-Fi -
+  enheten viser «Ingen internettilgang» eller ber stadig om passordet på nytt.
+  Problemet skjer ofte og forstyrrer undervisningen: elever kan ikke levere
+  oppgaver på nett, og lærere kan ikke vise materiell fra internett.
+  </p>
 
+  <h2>Løsning - kort veiledning</h2>
+  <ol class="list">
+    <li>Sjekk Wi-Fi på enheten: pass på at Wi-Fi er slått på og at riktig skolenettverk er valgt.
+      <img src="wifi_.png">
+    </li>
+    <li>Sjekk passordet på nytt - store og små bokstaver har betydning.
+      <img src="wifi2.png">
+    </li>
+    <li>Glem nettverket i innstillingene og koble til på nytt med passordet fra bunnen av.
+      <img src="glemt.jpg">
+    </li>
+    <li>Start enheten på nytt - noen ganger henger bare nettverksmodulen seg opp.
+      <img src="restart.jpg">
+    </li>
+    <li>Sjekk om andre har samme problem - hvis ja, ligger feilen i ruteren, ikke i enheten din.</li>
+    <li>Hvis ingenting hjelper, ta kontakt med IT-avdelingen og oppgi romnummer, tidspunkt og hva du allerede har prøvd.</li>
+  </ol>
 
+</div>
 
 </body>
 </html>
